@@ -16,6 +16,15 @@ export class GoalComponent implements OnInit {
     new Goal (5, 'Solve Fluid Mechanics Homework', 'So I can get leakage for my final exam'),
     new Goal (6, 'Plot world domination plan', 'So I can claim everyone and everything on this earth as mine...mwahahaha!'),
   ];
+  toggleDetails(index){
+    this.goals[index].showDescription = !this.goals[index].showDescription;
+  }
+
+  completeGoal(isComplete, index){
+    if (isComplete) {
+      this.goals.splice(index,1);
+    }
+  }
 
   constructor() { }
 
