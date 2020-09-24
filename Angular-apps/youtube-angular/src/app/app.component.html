@@ -2,19 +2,18 @@
 <div class="container">
   <p>Add a to do</p>
   <br>
-  <input type="text" class="input-text" placeholder="Type a todo"
-  [(ngModel)]="todoValue"
-  (keyup.enter)="addItem()">
+  <input type="text" class="input-text" placeholder="Type a todo" [(ngModel)]="todoValue" (keyup.enter)="addItem()" />
 
-  <button class="add-btn" (click)="addItem()" > Add to do </button>
+  <button class="add-btn" (click)="addItem()"> Add to do </button>
+
   <div class="list">
-  <ul>
-    <li *ngFor="let item of list">
-      <input type="checkbox" name="isDone"
-      [(ngModel)]="item.isDone" >
-      {{item.value}}
-      <button class="btn btn-danger " (click)="deleteItem()" > Delete </button>
-    </li>
-  </ul>
-</div>
+    <ul>
+      <li *ngFor="let item of list">
+        <input type="checkbox" name="isDone" 
+        [(ngModel)]="item.isDone">
+        {{item.value}}
+        <button class="btn btn-danger " (click)="deleteItem(item.id)"> Delete </button>
+      </li>
+    </ul>
+  </div>
 </div>

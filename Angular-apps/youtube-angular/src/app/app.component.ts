@@ -19,7 +19,7 @@ export class AppComponent {
 
   addItem(){
     if(this.todoValue !== ""){
-      const newItem: Todo ={
+      const newItem: Todo = {
         id: Date.now(),
         value: this.todoValue,
         isDone: false
