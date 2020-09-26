@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DiaryComponent } from './diary/diary.component';
+import { DiaryNotesComponent } from './diary-notes/diary-notes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    DiaryComponent
+    DiaryComponent,
+    DiaryNotesComponent
   ],
   imports: [
     BrowserModule,
