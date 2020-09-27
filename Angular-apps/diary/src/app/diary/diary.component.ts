@@ -8,6 +8,9 @@ import { Diary } from "../diary";
 })
 export class DiaryComponent implements OnInit {
   name ="Stacy";
+  title;
+  date;
+  entry;
 
   diarys:Diary[] = [
     { title:'Got hit by a car',date:(20121023),entry:'Didnt end well,now I am dead'},
