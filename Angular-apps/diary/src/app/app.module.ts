@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DiaryComponent } from './diary/diary.component';
 import { DiaryNotesComponent } from './diary-notes/diary-notes.component';
+import { NewNoteComponent } from './new-note/new-note.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     DiaryComponent,
-    DiaryNotesComponent
+    DiaryNotesComponent,
+    NewNoteComponent
   ],
   imports: [
     BrowserModule,
