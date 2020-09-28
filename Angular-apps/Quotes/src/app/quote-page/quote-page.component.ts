@@ -15,6 +15,21 @@ export class QuotePageComponent implements OnInit {
      new Quote(1,'Jung Hoseok','Lets not push off the things we need to do today for tomorrow','Ace', new Date(2018,3,18))
   ]
 
+
+  addNewQuote(quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
+
+    deleteQuote(isComplete, index) {
+    if (isComplete) {
+      let toDelete = confirm(`Do you want to delete this Quote? ${this.quotes[index].author}`)
+
+      if (toDelete) { this.quotes.splice(index, 1) }
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {
