@@ -25,7 +25,7 @@ export class QuotePageComponent implements OnInit {
 
     deleteQuote(isComplete, index) {
     if (isComplete) {
-      let toDelete = confirm(`Do you want to delete this Quote? ${this.quotes[index].author}`)
+      let toDelete = confirm(`Do you want to delete this Quote? ${this.quotes[index].user}`)
 
       if (toDelete) { this.quotes.splice(index, 1) }
     }

@@ -6,7 +6,8 @@
 
         <div class="row">
             <div class="col-md-6">
-        <div class="card w-50" *ngFor='let quote of quotes ; let i= index'>
+          
+        <div  class="card w-50" class="card " *ngFor='let quote of quotes ; let i= index'>
             <div class="card-header">
               <p>{{quote.user}} submitted this on {{quote.completeDate|date}} </p>
             </div>
@@ -17,7 +18,7 @@
               </blockquote>
               <div class="footer">
                   <app-vote-count></app-vote-count>
-                   <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+                   <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'> Delete</app-quote-details>
               </div>
             </div>
           </div>

@@ -1,1 +1,5 @@
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.body container-fluid{
+    background-image: url(src/assets/'Make It Happen' Motivation Wallpaper Mural _ Murals Wallpaper.jpeg);
+}
