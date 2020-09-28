@@ -5,7 +5,10 @@
     float: right;
 }
 .container-fluid{
-    background-color: cadetblue;
+   background-image: url('/src/assets/todo.jpeg');
+   background-position: center;
+   background-size: cover;
+   /* background-color: cornsilk; */
 }
 
 .card{
