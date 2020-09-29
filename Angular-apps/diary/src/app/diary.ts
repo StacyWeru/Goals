@@ -1,5 +1,5 @@
 export class Diary {
-    title:string;
-    date:number;
-    entry:string;
+    public title: string;public entry: string ;public completeDate: Date;
 }
+
+
