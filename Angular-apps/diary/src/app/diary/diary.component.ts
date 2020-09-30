@@ -13,7 +13,7 @@ export class DiaryComponent implements OnInit {
   entry;
 
   diarys:Diary[] = [
-    new Diary ("Watch finding Nemo"; 'Find an online version and watch merlin find his son'; new Date(2020,3,14)),
+    new Diary ("Watch finding Nemo", 'Find an online version and watch merlin find his son', new Date(2020,3,14)),
     new Diary ('Buy Cookies','I have to buy cookies for the parrot',new Date(2019,6,9)),
     new Diary ('Get new Phone Case','Diana has her birthday coming up soon',new Date(2022,1,12)),
   ];

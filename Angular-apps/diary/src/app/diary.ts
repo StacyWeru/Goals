@@ -1,5 +1,7 @@
 export class Diary {
-    public title: string;public entry: string ;public completeDate: Date;
+    constructor (public title: string,
+        public entry: string ,
+        public completeDate: Date){}
 }
 
 
