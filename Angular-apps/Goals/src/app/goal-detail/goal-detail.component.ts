@@ -7,12 +7,12 @@ import { Goal } from '../goal';
   styleUrls: ['./goal-detail.component.css']
 })
 export class GoalDetailComponent implements OnInit {
+
   
   @Input() goal: Goal;
-
   @Output() isComplete = new EventEmitter<boolean>();
 
-  goalComplete(complete:boolean){
+  goalDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
 
